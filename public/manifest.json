@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet Chat",
+  "version": "1.0.0",
+  "description": "A Extension by which you can Send Messages which will only be visible to you.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "matches": ["https://meet.google.com/*"]
+    }
+  ]
+}
