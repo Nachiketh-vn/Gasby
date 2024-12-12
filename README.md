@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# Chat UI Integration Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This project integrates a simple private chat functionality within a webpage. A chat button is injected into the page, and upon clicking, a chat window appears allowing users to send and display messages. The messages are displayed in a chat container, and the user can interact with the chat through a simple input field.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The chat UI is designed to toggle visibility on button click, allowing a clean and interactive experience without taking up too much space on the page.
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- A modern browser (Chrome, Firefox, Edge, etc.)
+- Node.js (if you plan to run the project locally using a build tool or server)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Installation Steps
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone the repository** to your local machine:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   git clone https://github.com/Nachiketh-vn/Gasby.git
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Navigate into the project folder**:
+
+
+3. **Install dependencies** (if any) by running the following command:
+
+   ```bash
+   npm install
+   ```
+
+4. **Build the React Project** in your terminal or run on local system .
+
+  
+
+   ```bash
+   npm run build
+   ```
+
+5. Once the project is built, use the dist folder in the chrome extension for using the extension in your Browser.
+
+## Key Features
+
+- **Chat Button:** A button labeled "Chat" that toggles the visibility of the chat window.
+- **Chat Window:** A hidden chat window containing a message container and a text area for input.
+- **Message Display:** Messages are displayed inside the chat window in message bubbles.
+- **Input Field:** A text area for typing messages and a "Send" button for sending them.
+- **Toggle Visibility:** Clicking the chat button shows or hides the chat window.
+- **Auto-scroll:** The chat container scrolls automatically when new messages are added, ensuring the most recent message is always visible.
+
+## Any Additional Notes or Assumptions
+
+- **Creating group:** Currently, the chat only is visible for the user but we can add functionality where we can make the group of users and use this chat functionality to chat between the meeting.
+- **Browser Compatibility:** The project is expected to work in modern browsers that support basic JavaScript and DOM manipulation.
+
