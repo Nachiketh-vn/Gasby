@@ -53,4 +53,4 @@ The chat UI is designed to toggle visibility on button click, allowing a clean a
 
 - **Creating group:** Currently, the chat only is visible for the user but we can add functionality where we can make the group of users and use this chat functionality to chat between the meeting.
 - **Browser Compatibility:** The project is expected to work in modern browsers that support basic JavaScript and DOM manipulation.
-
+- **Initially I had planned to add the chat in the google meet chat but the parent div Id and Class of the chat container where regualarly changing so it was not posiible to integrate it there, so I have made a separate chat window.**
